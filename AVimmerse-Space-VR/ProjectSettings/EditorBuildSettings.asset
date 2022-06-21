@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Team/Josh/Scenes/Spaceship.unity
     guid: 6f8b5fb55fb9b7a4f8becbb8700f4055
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Team/Josh/Scenes/Sun.unity
     guid: 9de1ac8c65159094f8e1c1a0fd579be6
   m_configObjects:
