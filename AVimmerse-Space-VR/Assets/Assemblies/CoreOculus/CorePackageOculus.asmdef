@@ -1,0 +1,32 @@
+{
+    "name": "CorePackageOculus",
+    "rootNamespace": "",
+    "references": [
+        "GUID:21b850ac1b5452b46a20c637f002dbf9",
+        "GUID:e2367297a6c431949a05cf8078ad917d",
+        "GUID:4e79697c263b8554db87efff0e7046ba",
+        "GUID:2a230cb87a1d3ba4a98bdc0ddae76e6c",
+        "GUID:48af58ae5328ff048acacd924604a804",
+        "GUID:62f0806efa855234fa40d98ad397e1ca",
+        "GUID:aad0989a2d3885f4e8846b6f0609300c",
+        "GUID:a28a0ede888098f48be24ef95777d9bd",
+        "GUID:c4e2f3946e3f2084981eae301b9f4940",
+        "GUID:6ab3faea27328a64ebb97ad11adb0302",
+        "GUID:3d2c6c35bff878341a57ebf7a749f298",
+        "GUID:5c45576b5244bbf4ebf491eae8b06528",
+        "GUID:773ee6cd6da621e4e985e87d23791541",
+        "GUID:f64c9ebcd7899c3448a08dc9f9ddbe30",
+        "GUID:d2761a0af0f567748a72629d4bb18a26",
+        "GUID:7305c54a43f3814439df347c7519653e",
+        "GUID:bf7126905a54c9746b9c475d69312766"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
