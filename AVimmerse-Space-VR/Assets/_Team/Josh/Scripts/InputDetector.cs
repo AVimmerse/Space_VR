@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
+
+/// <summary>
+/// 27.6.22 - Handles updates upon the input devices changing. 
+/// Used for switching between controller modes and syncing their origins.
+/// </summary>
 public class InputDetector : MonoBehaviour
 {
     [Header("References")]
@@ -10,17 +15,6 @@ public class InputDetector : MonoBehaviour
 
     [SerializeField] GameObject HandTrackedSetup;
     [SerializeField] Transform HandTrackedSetupOrigin;
-
-    private void Update()
-    {
-        //Debug.Log(InputDevices.GetDeviceAtXRNode(XRNode.Head).manufacturer);
-        //Debug.Log(InputDevices.GetDeviceAtXRNode(XRNode.Head).name);
-        //Debug.Log(InputDevices.GetDeviceAtXRNode(XRNode.Head).characteristics);
-        //
-        //Debug.Log(InputDevices.GetDeviceAtXRNode(XRNode.LeftHand).manufacturer);
-        //Debug.Log(InputDevices.GetDeviceAtXRNode(XRNode.LeftHand).name);
-        //Debug.Log(InputDevices.GetDeviceAtXRNode(XRNode.LeftHand).characteristics);
-    }
 
     private void Awake()
     {
@@ -48,16 +42,6 @@ public class InputDetector : MonoBehaviour
             ControllerSetup.SetActive(true);
             HandTrackedSetup.SetActive(false);
         }
-
-    }
-
-    private void AllignWithHandSetup()
-    {
-
-    }
-
-    private void AllignWithControllerSetup()
-    {
 
     }
 

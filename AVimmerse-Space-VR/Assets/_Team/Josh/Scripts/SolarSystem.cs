@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// System which creats orbiting objects using Rigidbodies
+/// Note:orbiting objects must have RIgidBody and to be tagged "Celestial"
+/// </summary>
 public class SolarSystem : MonoBehaviour
 {
     readonly private float G = 100f;
@@ -11,11 +15,6 @@ public class SolarSystem : MonoBehaviour
     {
         celestials = GameObject.FindGameObjectsWithTag("Celestial");
         InitialVelocity();
-    }
-
-    private void Update()
-    {
-        
     }
 
     private void FixedUpdate()
@@ -60,3 +59,5 @@ public class SolarSystem : MonoBehaviour
         }
     }
 }
+
+// Source: https://www.youtube.com/watch?v=kUXskc76ud8&ab_channel=Coderious

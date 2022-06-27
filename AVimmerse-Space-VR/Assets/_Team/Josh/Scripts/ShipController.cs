@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+/// <summary>
+/// Main ship script encapsulating functionality
+/// </summary>
 public class ShipController : MonoBehaviour
 {
     [Header("References")]
@@ -10,7 +13,6 @@ public class ShipController : MonoBehaviour
 
     [Header("Data")]
     [SerializeField] private string destination = "";
-
 
     #region public
     public string GetDestination() { return destination; }

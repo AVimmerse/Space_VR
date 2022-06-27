@@ -3,28 +3,22 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.InputSystem;
 
+/// <summary>
+/// Player teleportation extender. Reticles display and hide dynamically
+/// </summary>
 public class TeleportController : MonoBehaviour
 {
-    #region original
-    //public XRController leftController;
-    //public XRController rightController;
-    //public InputHelpers.Button teleportRayButton;
-    //public float activationThreshold = 0.1f;
-
     private XRInteractorLineVisual leftRay;
     private GameObject leftReticle;
 
     private XRInteractorLineVisual rightRay;
     private GameObject rightReticle;
-    #endregion
 
-    #region XRControllerActionBased
     [SerializeField] private ActionBasedController leftController;
     [SerializeField] private InputActionReference leftControllerAction;
 
     [SerializeField] private ActionBasedController rightController;
     [SerializeField] private InputActionReference rightControllerAction;
-    #endregion
 
     void Start()
     {
