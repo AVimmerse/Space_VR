@@ -57,10 +57,15 @@ namespace Oculus.Interaction.Input
 
                 capsule.CapsuleRigidbody = new GameObject((boneTransform.name).ToString() + "_CapsuleRigidbody")
                     .AddComponent<Rigidbody>();
+                // -------------------- AVimmerse Josh mod --------------------
+                capsule.CapsuleRigidbody.tag = "Player";
+                // -------------------- End --------------------
                 capsule.CapsuleRigidbody.mass = 1.0f;
                 capsule.CapsuleRigidbody.isKinematic = true;
                 capsule.CapsuleRigidbody.useGravity = false;
                 capsule.CapsuleRigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
+
+
 
                 GameObject rbGO = capsule.CapsuleRigidbody.gameObject;
                 rbGO.transform.SetParent(_capsulesGO.transform, false);
@@ -70,6 +75,9 @@ namespace Oculus.Interaction.Input
 
                 capsule.CapsuleCollider = new GameObject((boneTransform.name).ToString() + "_CapsuleCollider")
                     .AddComponent<CapsuleCollider>();
+                // -------------------- AVimmerse Josh mod --------------------
+                capsule.CapsuleCollider.tag = "Player";
+                // -------------------- End --------------------
                 capsule.CapsuleCollider.isTrigger = false;
 
                 var p0 = _skeleton.BoneCapsules[i].StartPoint.FromFlippedXVector3f();

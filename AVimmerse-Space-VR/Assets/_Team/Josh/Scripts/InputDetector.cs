@@ -6,7 +6,10 @@ public class InputDetector : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] GameObject ControllerSetup;
+    [SerializeField] Transform ControllerSetupOrigin;
+
     [SerializeField] GameObject HandTrackedSetup;
+    [SerializeField] Transform HandTrackedSetupOrigin;
 
     private void Update()
     {
@@ -29,16 +32,32 @@ public class InputDetector : MonoBehaviour
     {
         print($"<color=#00FF00>InputDevice_Changed</color>");
 
-        if (InputDevices.GetDeviceAtXRNode(XRNode.LeftHand).name != null)
+        if (InputDevices.GetDeviceAtXRNode(XRNode.LeftHand).name == null) // Hand Tracking
         {
-            ControllerSetup.SetActive(true);
-            HandTrackedSetup.SetActive(false);
-        }
-        else
-        {
+            // Sync orign
+            HandTrackedSetupOrigin.position = ControllerSetupOrigin.position;
+
             HandTrackedSetup.SetActive(true);
             ControllerSetup.SetActive(false);
         }
+        else // Controllers
+        {
+            // Sync orign
+            ControllerSetupOrigin.position = HandTrackedSetupOrigin.position;
+
+            ControllerSetup.SetActive(true);
+            HandTrackedSetup.SetActive(false);
+        }
+
+    }
+
+    private void AllignWithHandSetup()
+    {
+
+    }
+
+    private void AllignWithControllerSetup()
+    {
 
     }
 
