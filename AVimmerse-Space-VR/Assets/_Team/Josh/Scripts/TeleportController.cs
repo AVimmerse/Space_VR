@@ -20,7 +20,7 @@ public class TeleportController : MonoBehaviour
     [SerializeField] private ActionBasedController rightController;
     [SerializeField] private InputActionReference rightControllerAction;
 
-    void Start()
+    void Awake()
     {
         leftRay = leftController.GetComponent<XRInteractorLineVisual>();
         leftReticle = leftRay.reticle;
@@ -35,6 +35,15 @@ public class TeleportController : MonoBehaviour
         rightControllerAction.action.canceled += OnRightControllerAction_Changed;
     }
 
+    private void OnDestroy()
+    {
+        leftControllerAction.action.performed -= OnLeftControllerAction_Changed;
+        leftControllerAction.action.canceled -= OnLeftControllerAction_Changed;
+
+        rightControllerAction.action.performed -= OnRightControllerAction_Changed;
+        rightControllerAction.action.canceled -= OnRightControllerAction_Changed;
+    }
+
     private void OnRightControllerAction_Changed(InputAction.CallbackContext obj)
     {
         rightRay.enabled = obj.performed;
@@ -46,22 +55,5 @@ public class TeleportController : MonoBehaviour
         leftRay.enabled = obj.performed;
         leftReticle.SetActive(obj.performed);
     }
-
-    //private void Update()
-    //{
-    //    bool leftIsPressed = CheckButtonDown(leftController);
-    //    leftRay.enabled = leftIsPressed;
-    //    leftReticle.SetActive(leftIsPressed);
-    //    
-    //    bool rightIsPressed = CheckButtonDown(rightController);
-    //    rightRay.enabled = rightIsPressed;
-    //    rightReticle.SetActive(rightIsPressed);
-    //}
-
-    //public bool CheckButtonDown(XRController controller)
-    //{
-    //    InputHelpers.IsPressed(controller.inputDevice, teleportRayButton, out bool isPressed, activationThreshold);
-    //    return isPressed;
-    //}
 
 }

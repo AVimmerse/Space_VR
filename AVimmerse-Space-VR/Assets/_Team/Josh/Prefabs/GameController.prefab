@@ -60,4 +60,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ControllerSetup: {fileID: 0}
+  ControllerSetupOrigin: {fileID: 0}
   HandTrackedSetup: {fileID: 0}
+  HandTrackedSetupOrigin: {fileID: 0}
