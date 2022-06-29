@@ -1097,7 +1097,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "UI",
+                    "name": "Teleport",
                     "type": "Button",
                     "id": "389a9864-3ee9-4a3f-b617-3671115e40bb",
                     "expectedControlType": "Button",
@@ -1106,7 +1106,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "UI Value",
+                    "name": "Teleport Value",
                     "type": "Value",
                     "id": "8dc17ac2-73a6-4b8b-8918-10df8ee2c51a",
                     "expectedControlType": "Axis",
@@ -1152,7 +1152,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
-                    "action": "UI",
+                    "action": "Teleport",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -1185,7 +1185,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
-                    "action": "UI Value",
+                    "action": "Teleport Value",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -1225,7 +1225,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "UI",
+                    "name": "Teleport",
                     "type": "Button",
                     "id": "562be82f-d158-4b6c-95d5-162e5e6df625",
                     "expectedControlType": "Button",
@@ -1234,7 +1234,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "UI Value",
+                    "name": "Teleport Value",
                     "type": "Value",
                     "id": "ed3cd464-ea03-4fca-a5dc-5236426df2b2",
                     "expectedControlType": "Axis",
@@ -1298,7 +1298,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
-                    "action": "UI",
+                    "action": "Teleport",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -1331,7 +1331,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
-                    "action": "UI Value",
+                    "action": "Teleport Value",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

@@ -97,8 +97,10 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 918721676}
+  m_LightingDataAsset: {fileID: 112000000, guid: 00c36e5170b66f846a2b71cc73a700b3,
+    type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 6bb13d611c486d94db8eacb110735c33,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -139,7 +141,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &37071508
 RectTransform:
@@ -276,7 +278,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &91217268
 Transform:
@@ -402,7 +404,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &124353486
 RectTransform:
@@ -449,7 +451,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Sun
+          m_StringArgument: Mercury
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!65 &124353488
@@ -506,7 +508,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &186274231
 RectTransform:
@@ -583,7 +585,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Sun
+          m_StringArgument: Earth
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &186274233
@@ -642,7 +644,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &191899834
 RectTransform:
@@ -689,7 +691,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Sun
+          m_StringArgument: Saturn
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!65 &191899836
@@ -747,7 +749,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &193678706
 RectTransform:
@@ -794,7 +796,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Sun
+          m_StringArgument: Neptune
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!65 &193678708
@@ -850,7 +852,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &199554198
 RectTransform:
@@ -928,7 +930,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &204970201
 BoxCollider:
@@ -1026,7 +1028,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &219800903
 Transform:
@@ -1244,6 +1246,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: box
       objectReference: {fileID: 0}
+    - target: {fileID: 1010957679757948051, guid: 552ec14693389f648b758ee03984c6e5,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 6034427761748156616}
     - target: {fileID: 1010957679757948052, guid: 552ec14693389f648b758ee03984c6e5,
         type: 3}
       propertyPath: m_RootOrder
@@ -1325,7 +1332,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &320695736
 Transform:
@@ -1340,6 +1347,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2036564974}
+  - {fileID: 496593690}
   m_Father: {fileID: 996792535}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1452,7 +1460,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &333093399
 Transform:
@@ -1577,7 +1585,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &351994073
 RectTransform:
@@ -1714,7 +1722,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &382751977
 RectTransform:
@@ -1761,7 +1769,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Sun
+          m_StringArgument: Uranus
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!65 &382751979
@@ -2022,7 +2030,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &483518979
 RectTransform:
@@ -2069,7 +2077,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Sun
+          m_StringArgument: Venus
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!65 &483518981
@@ -2156,7 +2164,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1405339987}
 --- !u!33 &494870771
@@ -4239,6 +4247,121 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &496593689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 496593690}
+  - component: {fileID: 496593692}
+  - component: {fileID: 496593691}
+  m_Layer: 0
+  m_Name: Point Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &496593690
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496593689}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 320695736}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &496593691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496593689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+--- !u!108 &496593692
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496593689}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0.5
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &521361963
 GameObject:
   m_ObjectHideFlags: 0
@@ -4255,7 +4378,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &521361964
 RectTransform:
@@ -4396,7 +4519,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &593759699
 RectTransform:
@@ -4532,7 +4655,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &610636427
 RectTransform:
@@ -4609,7 +4732,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Sun
+          m_StringArgument: Mercury
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &610636429
@@ -4801,7 +4924,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &751870253
 Transform:
@@ -4927,7 +5050,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &769236510
 RectTransform:
@@ -4974,7 +5097,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Sun
+          m_StringArgument: Earth
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!65 &769236512
@@ -5214,7 +5337,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &863308173
 RectTransform:
@@ -5344,6 +5467,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: box (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1010957679757948051, guid: 552ec14693389f648b758ee03984c6e5,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 6034427761748156616}
     - target: {fileID: 1010957679757948052, guid: 552ec14693389f648b758ee03984c6e5,
         type: 3}
       propertyPath: m_RootOrder
@@ -5424,7 +5552,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &917776786
 Transform:
@@ -5504,68 +5632,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 917776785}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!850595691 &918721676
-LightingSettings:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 4
-  m_GIWorkflowMode: 1
-  m_EnableBakedLightmaps: 1
-  m_EnableRealtimeLightmaps: 0
-  m_RealtimeEnvironmentLighting: 1
-  m_BounceScale: 1
-  m_AlbedoBoost: 1
-  m_IndirectOutputScale: 1
-  m_UsingShadowmask: 1
-  m_BakeBackend: 1
-  m_LightmapMaxSize: 1024
-  m_BakeResolution: 40
-  m_Padding: 2
-  m_LightmapCompression: 3
-  m_AO: 0
-  m_AOMaxDistance: 1
-  m_CompAOExponent: 1
-  m_CompAOExponentDirect: 0
-  m_ExtractAO: 0
-  m_MixedBakeMode: 2
-  m_LightmapsBakeMode: 1
-  m_FilterMode: 1
-  m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
-  m_ExportTrainingData: 0
-  m_TrainingDataDestination: TrainingData
-  m_RealtimeResolution: 2
-  m_ForceWhiteAlbedo: 0
-  m_ForceUpdates: 0
-  m_FinalGather: 0
-  m_FinalGatherRayCount: 256
-  m_FinalGatherFiltering: 1
-  m_PVRCulling: 1
-  m_PVRSampling: 1
-  m_PVRDirectSampleCount: 32
-  m_PVRSampleCount: 512
-  m_PVREnvironmentSampleCount: 256
-  m_PVREnvironmentReferencePointCount: 2048
-  m_LightProbeSampleCountMultiplier: 4
-  m_PVRBounces: 2
-  m_PVRMinBounces: 1
-  m_PVREnvironmentMIS: 1
-  m_PVRFilteringMode: 1
-  m_PVRDenoiserTypeDirect: 1
-  m_PVRDenoiserTypeIndirect: 1
-  m_PVRDenoiserTypeAO: 1
-  m_PVRFilterTypeDirect: 0
-  m_PVRFilterTypeIndirect: 0
-  m_PVRFilterTypeAO: 0
-  m_PVRFilteringGaussRadiusDirect: 1
-  m_PVRFilteringGaussRadiusIndirect: 5
-  m_PVRFilteringGaussRadiusAO: 2
-  m_PVRFilteringAtrousPositionSigmaDirect: 0.5
-  m_PVRFilteringAtrousPositionSigmaIndirect: 2
-  m_PVRFilteringAtrousPositionSigmaAO: 1
-  m_PVRTiledBaking: 0
 --- !u!1 &925272332
 GameObject:
   m_ObjectHideFlags: 0
@@ -5615,7 +5681,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &925606659
 RectTransform:
@@ -5662,7 +5728,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Sun
+          m_StringArgument: Mars
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!65 &925606661
@@ -5720,7 +5786,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &968536171
 RectTransform:
@@ -5767,7 +5833,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Sun
+          m_StringArgument: Lunar
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!65 &968536173
@@ -5837,7 +5903,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &988639752
 Transform:
@@ -5996,7 +6062,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!65 &996792532
 BoxCollider:
@@ -6175,7 +6241,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1002567605}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4, y: 1.7849998, z: 0.25000286}
+  m_LocalPosition: {x: -4, y: 2.0349998, z: 0.25000286}
   m_LocalScale: {x: 1, y: 4.0699, z: 11.000474}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6200,7 +6266,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1011002009
 Transform:
@@ -6325,7 +6391,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &1073275136
 BoxCollider:
@@ -6421,7 +6487,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1091326509
 RectTransform:
@@ -6558,7 +6624,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1091746580
 Transform:
@@ -6689,7 +6755,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1127371492
 RectTransform:
@@ -6766,7 +6832,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Sun
+          m_StringArgument: Mars
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1127371494
@@ -6897,7 +6963,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1163600340}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: 1.7849998, z: 0.25000286}
+  m_LocalPosition: {x: 4, y: 2.0349998, z: 0.25000286}
   m_LocalScale: {x: 1, y: 4.0699, z: 11.000474}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6920,7 +6986,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1197564807
 RectTransform:
@@ -7057,7 +7123,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &1251356725
 MonoBehaviour:
@@ -7176,7 +7242,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1259285242
 RectTransform:
@@ -7301,6 +7367,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7480158993094550281}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &1386202010 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7480158991709364371, guid: 7ee6be353f6fb9749a10ac59eee62a6d,
+    type: 3}
+  m_PrefabInstance: {fileID: 7480158993094550281}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1403152156
 GameObject:
   m_ObjectHideFlags: 0
@@ -7318,7 +7390,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1403152157
 RectTransform:
@@ -7395,7 +7467,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Sun
+          m_StringArgument: Saturn
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1403152159
@@ -7616,7 +7688,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1407399917
 RectTransform:
@@ -7751,7 +7823,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1441135421
 RectTransform:
@@ -7886,7 +7958,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1445468876
 RectTransform:
@@ -8010,7 +8082,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1560662817
 RectTransform:
@@ -8112,7 +8184,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1571570492
 Transform:
@@ -8237,7 +8309,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1579619935
 RectTransform:
@@ -8314,7 +8386,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Sun
+          m_StringArgument: Venus
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1579619937
@@ -10503,7 +10575,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1666232077
 RectTransform:
@@ -10609,7 +10681,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &1730518233
 MonoBehaviour:
@@ -10788,7 +10860,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1751783191
 RectTransform:
@@ -11088,7 +11160,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &1830151097
 MonoBehaviour:
@@ -11487,7 +11559,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911796689}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.08505548, y: 3.25, z: 0}
+  m_LocalPosition: {x: 0.08505548, y: 2.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11592,7 +11664,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1916173833
 RectTransform:
@@ -11728,7 +11800,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &1930692932
 BoxCollider:
@@ -11825,7 +11897,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1962975793
 RectTransform:
@@ -11961,7 +12033,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1972093298
 RectTransform:
@@ -12038,7 +12110,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Sun
+          m_StringArgument: Uranus
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1972093300
@@ -12097,7 +12169,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1989444040
 Transform:
@@ -12222,7 +12294,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &2010200732
 RectTransform:
@@ -12299,7 +12371,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Sun
+          m_StringArgument: Neptune
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2010200734
@@ -12357,7 +12429,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &2012328040
 RectTransform:
@@ -12434,7 +12506,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Sun
+          m_StringArgument: Jupiter
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2012328042
@@ -12493,7 +12565,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &2013897809
 RectTransform:
@@ -12540,7 +12612,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Sun
+          m_StringArgument: Jupiter
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!65 &2013897811
@@ -12596,7 +12668,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &2036564972
 MonoBehaviour:
@@ -12626,7 +12698,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &2036564974
 Transform:
@@ -12657,7 +12729,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2046227397
 Transform:
@@ -12693,7 +12765,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &2076134753
 RectTransform:
@@ -12781,7 +12853,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &2083352114
 RectTransform:
@@ -12858,7 +12930,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Sun
+          m_StringArgument: Lunar
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2083352116
@@ -13030,7 +13102,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &2107221748
 RectTransform:
@@ -13419,6 +13491,11 @@ PrefabInstance:
       propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 988420207}
+    - target: {fileID: 3855387800220196172, guid: 7adf3cd6687cfcd4486d970639fc6ca7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3855387800548658962, guid: 7adf3cd6687cfcd4486d970639fc6ca7,
         type: 3}
       propertyPath: m_InteractionManager
@@ -13428,6 +13505,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lever
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855387800548658972, guid: 7adf3cd6687cfcd4486d970639fc6ca7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3855387800548658973, guid: 7adf3cd6687cfcd4486d970639fc6ca7,
         type: 3}
@@ -13562,6 +13644,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 149847555355781647, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: leftControllerAction
+      value: 
+      objectReference: {fileID: 6080260085097015922, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 149847555355781647, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: rightControllerAction
+      value: 
+      objectReference: {fileID: -5384959770227485285, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
     - target: {fileID: 1558247753384635945, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
         type: 3}
       propertyPath: m_RootOrder
@@ -13622,6 +13716,427 @@ PrefabInstance:
       propertyPath: m_Name
       value: '- PLAYER Action XRIK'
       objectReference: {fileID: 0}
+    - target: {fileID: 5052645159374756681, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_EnableInputActions
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645159374756681, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_SelectAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645159374756681, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_UIPressAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645159374756681, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ActivateAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645159374756681, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645159374756681, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_HapticDeviceAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645159374756681, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_RotateAnchorAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645159374756681, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_UIPressActionValue.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645159374756681, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ActivateActionValue.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645159374756681, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_TranslateAnchorAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645159784850958, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_SelectAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645159784850958, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_UIPressAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645159784850958, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ActivateAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645159784850958, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645159784850958, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_HapticDeviceAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645159784850958, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_RotateAnchorAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645159784850958, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_UIPressActionValue.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645159784850958, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ActivateActionValue.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645159784850958, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_TranslateAnchorAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160448307297, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_UIPressAction.m_Reference
+      value: 
+      objectReference: {fileID: -2073301881212195510, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 5052645160448307297, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_SelectAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160448307297, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ActivateAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160448307297, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_UIPressActionValue.m_Reference
+      value: 
+      objectReference: {fileID: 7225813887423843505, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 5052645160448307297, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160448307297, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_HapticDeviceAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160448307297, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_RotateAnchorAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160448307297, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ActivateActionValue.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160448307297, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_TranslateAnchorAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160448307300, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ValidColorGradient.ctime0
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160448307300, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ValidColorGradient.key0.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160448307300, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ValidColorGradient.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160448307300, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ValidColorGradient.key0.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160448307300, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ValidColorGradient.key0.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160824515437, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_UIPressAction.m_Reference
+      value: 
+      objectReference: {fileID: 7789555085831213739, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 5052645160824515437, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_SelectAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160824515437, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_UIPressAction.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160824515437, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ActivateAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160824515437, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_UIPressActionValue.m_Reference
+      value: 
+      objectReference: {fileID: -4151961093343329845, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 5052645160824515437, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160824515437, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_HapticDeviceAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160824515437, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_RotateAnchorAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160824515437, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_UIPressActionValue.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160824515437, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ActivateActionValue.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160824515437, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_TranslateAnchorAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160824515472, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ValidColorGradient.key0.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160824515472, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ValidColorGradient.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160824515472, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ValidColorGradient.key0.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160824515472, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ValidColorGradient.key0.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160916473824, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_SelectAction.m_Reference
+      value: 
+      objectReference: {fileID: -7482539316157862981, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 5052645160916473824, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ActivateAction.m_Reference
+      value: 
+      objectReference: {fileID: 7789555085831213739, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 5052645160916473824, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_UIPressAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160916473824, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Reference
+      value: 
+      objectReference: {fileID: 7311451876994549172, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 5052645160916473824, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ActivateActionValue.m_Reference
+      value: 
+      objectReference: {fileID: -4151961093343329845, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 5052645160916473824, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_UIPressActionValue.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160966178430, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_SelectAction.m_Reference
+      value: 
+      objectReference: {fileID: -751755594789899259, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 5052645160966178430, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ActivateAction.m_Reference
+      value: 
+      objectReference: {fileID: -2073301881212195510, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 5052645160966178430, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_UIPressAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160966178430, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Reference
+      value: 
+      objectReference: {fileID: 6152725593826719992, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 5052645160966178430, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ActivateActionValue.m_Reference
+      value: 
+      objectReference: {fileID: 7225813887423843505, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 5052645160966178430, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_HapticDeviceAction.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160966178430, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_RotateAnchorAction.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160966178430, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_UIPressActionValue.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052645160966178430, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_TranslateAnchorAction.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193034546164231, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_SelectAction.m_Reference
+      value: 
+      objectReference: {fileID: -5384959770227485285, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 8008193034546164231, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_UIPressAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193034546164231, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ActivateAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193034546164231, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Reference
+      value: 
+      objectReference: {fileID: 782622388390014812, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 8008193034546164231, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_HapticDeviceAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193034546164231, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_RotateAnchorAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193034546164231, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_UIPressActionValue.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193034546164231, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ActivateActionValue.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193034546164231, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_TranslateAnchorAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193035261550582, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_SelectAction.m_Reference
+      value: 
+      objectReference: {fileID: 6080260085097015922, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 8008193035261550582, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_UIPressAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193035261550582, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ActivateAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193035261550582, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Reference
+      value: 
+      objectReference: {fileID: 3617539760970139062, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 8008193035261550582, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_HapticDeviceAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193035261550582, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_RotateAnchorAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193035261550582, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_UIPressActionValue.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193035261550582, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ActivateActionValue.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193035261550582, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_TranslateAnchorAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4, type: 3}
 --- !u!1 &5550776016871686057 stripped
@@ -13660,6 +14175,86 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 6034427761748156616}
+    - target: {fileID: 7480158991709364373, guid: 7ee6be353f6fb9749a10ac59eee62a6d,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7480158991709364373, guid: 7ee6be353f6fb9749a10ac59eee62a6d,
+        type: 3}
+      propertyPath: m_Deactivated.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7480158991709364373, guid: 7ee6be353f6fb9749a10ac59eee62a6d,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7480158991709364373, guid: 7ee6be353f6fb9749a10ac59eee62a6d,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1386202010}
+    - target: {fileID: 7480158991709364373, guid: 7ee6be353f6fb9749a10ac59eee62a6d,
+        type: 3}
+      propertyPath: m_Deactivated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7480158991709364373, guid: 7ee6be353f6fb9749a10ac59eee62a6d,
+        type: 3}
+      propertyPath: m_Deactivated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1386202010}
+    - target: {fileID: 7480158991709364373, guid: 7ee6be353f6fb9749a10ac59eee62a6d,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7480158991709364373, guid: 7ee6be353f6fb9749a10ac59eee62a6d,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_material
+      objectReference: {fileID: 0}
+    - target: {fileID: 7480158991709364373, guid: 7ee6be353f6fb9749a10ac59eee62a6d,
+        type: 3}
+      propertyPath: m_Deactivated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7480158991709364373, guid: 7ee6be353f6fb9749a10ac59eee62a6d,
+        type: 3}
+      propertyPath: m_Deactivated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_material
+      objectReference: {fileID: 0}
+    - target: {fileID: 7480158991709364373, guid: 7ee6be353f6fb9749a10ac59eee62a6d,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.Renderer, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7480158991709364373, guid: 7ee6be353f6fb9749a10ac59eee62a6d,
+        type: 3}
+      propertyPath: m_Deactivated.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.Renderer, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7480158991709364373, guid: 7ee6be353f6fb9749a10ac59eee62a6d,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: 1b73aac0137cac246961c71b2cbf9db3, type: 2}
+    - target: {fileID: 7480158991709364373, guid: 7ee6be353f6fb9749a10ac59eee62a6d,
+        type: 3}
+      propertyPath: m_Deactivated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: fae2f522beae98c44bf48f8ed5b11f7c, type: 2}
+    - target: {fileID: 7480158991709364373, guid: 7ee6be353f6fb9749a10ac59eee62a6d,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7480158991709364373, guid: 7ee6be353f6fb9749a10ac59eee62a6d,
+        type: 3}
+      propertyPath: m_Deactivated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7480158991709364380, guid: 7ee6be353f6fb9749a10ac59eee62a6d,
         type: 3}
       propertyPath: m_Name
@@ -13823,6 +14418,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2046227397}
     m_Modifications:
+    - target: {fileID: 8813394241524713186, guid: d6e21a24bd81b3841af4297cb6925b8e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813394241874714374, guid: d6e21a24bd81b3841af4297cb6925b8e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8813394242727184008, guid: d6e21a24bd81b3841af4297cb6925b8e,
         type: 3}
       propertyPath: m_RootOrder
@@ -13882,6 +14487,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813394242727184023, guid: d6e21a24bd81b3841af4297cb6925b8e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813394243409987777, guid: d6e21a24bd81b3841af4297cb6925b8e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813394243409987780, guid: d6e21a24bd81b3841af4297cb6925b8e,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6e21a24bd81b3841af4297cb6925b8e, type: 3}
