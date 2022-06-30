@@ -9,7 +9,7 @@ using UnityEngine.Events;
 public class PhysicsButton : MonoBehaviour
 {
 
-    [SerializeField] private float threshold = 0.1f;
+    [SerializeField, Tooltip("percentage of the button press needed to activate the button")] private float threshold = 0.1f;
     [SerializeField] private float deadZone = 0.025f;
 
     private bool _isPressed;
