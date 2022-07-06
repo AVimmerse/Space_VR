@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'UNITY_INSTANCE_ID' with 'UNITY_VERTEX_INPUT_INSTANCE_ID'
+
 // Copyright 2017 Google Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -48,11 +50,13 @@ Category {
       sampler2D _MainTex;
       fixed4 _TintColor;
 
-      struct v2f {
+     struct v2f {
         float4 vertex : SV_POSITION;
         fixed4 color : COLOR;
         float2 texcoord : TEXCOORD0;
         float waveform : TEXCOORD1;
+        UNITY_VERTEX_INPUT_INSTANCE_ID //insert
+        UNITY_VERTEX_OUTPUT_STEREO //Insert
       };
 
       float4 _MainTex_ST;
@@ -65,25 +69,38 @@ Category {
       {
         v.color = TbVertToSrgb(v.color);
         v2f o;
+
+        UNITY_SETUP_INSTANCE_ID(v); //Insert
+        UNITY_INITIALIZE_OUTPUT(v2f, o); //Insert
+        UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o); //Insert
+
         float birthTime = v.texcoord.w;
         float rotation = v.texcoord.z;
         float halfSize = GetParticleHalfSize(v.corner.xyz, v.center, birthTime);
         float4 center = float4(v.center.xyz, 1);
         float4 corner = OrientParticle(center.xyz, halfSize, v.vid, rotation);
+        float4 center_WS = mul(unity_ObjectToWorld, center);
+        float4 corner_WS = OrientParticle_WS(center_WS.xyz, halfSize, v.vid, rotation);
+        
         float waveform = 0;
         // TODO: displacement should happen before orientation
 #ifdef AUDIO_REACTIVE
         float4 dispVec = float4(0,0,0,0);
-        float4 corner_WS = mul(unity_ObjectToWorld, corner);
+        //float4 corner_WS = mul(unity_ObjectToWorld, corner); // JOSH MOD
+        corner_WS = mul(unity_ObjectToWorld, corner);
         // TODO(pld): worldspace is almost certainly incorrect: use scene or object?
         waveform = tex2Dlod(_FFTTex, float4(fmod(corner_WS.x * _WaveformFreq + _BeatOutputAccum.z*.5,1),0,0,0) ).b * .25;
         dispVec.xyz += waveform * _WaveformIntensity.xyz;
         corner = corner + dispVec;
 #endif
-        o.vertex = UnityObjectToClipPos(corner);
+        /*o.vertex = UnityObjectToClipPos(corner);
         o.color = v.color * _BaseGain;
         o.texcoord = TRANSFORM_TEX(v.texcoord.xy,_MainTex);
         o.waveform = waveform * 15;
+        return o;*/
+        o.vertex = mul(UNITY_MATRIX_VP, corner_WS);
+        o.color = v.color * _BaseGain;
+        o.texcoord = TRANSFORM_TEX(v.texcoord.xy, _MainTex);
         return o;
       }
 
@@ -93,6 +110,7 @@ Category {
 #ifdef AUDIO_REACTIVE
         // Deform uv's by waveform displacement amount vertically
         // Envelop by "V" UV to keep the edges clean
+        
         float vDistance = abs(i.texcoord.y - .5)*2;
         float vStretched = (i.texcoord.y - 0.5) * (.5 - abs(i.waveform)) * 2 + 0.5;
         i.texcoord.y = lerp(vStretched, i.texcoord.y, vDistance);

@@ -51,6 +51,10 @@ Category {
         float4 vertex : SV_POSITION;
         fixed4 color : COLOR;
         float2 texcoord : TEXCOORD0;
+
+        UNITY_VERTEX_INPUT_INSTANCE_ID //Insert
+        UNITY_VERTEX_OUTPUT_STEREO  //Insert
+
       };
 
       v2f vert (ParticleVertexWithSpread_t v)
@@ -58,11 +62,18 @@ Category {
         v.color = TbVertToSrgb(v.color);
         const float PI = 3.14159265359;
         v2f o;
+
+        UNITY_SETUP_INSTANCE_ID(v); //Insert
+        UNITY_INITIALIZE_OUTPUT(v2f, o); //Insert
+        UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o); //Insert
+
         float birthTime = v.texcoord.w;
         float rotation = v.texcoord.z;
         float halfSize = GetParticleHalfSize(v.corner.xyz, v.center, birthTime);
         float spreadProgress = SpreadProgress(birthTime, _SpreadRate);
         float4 center = SpreadParticle(v, spreadProgress);
+        float4 center_WS = mul(unity_ObjectToWorld, center);
+        float4 corner_WS = OrientParticle_WS(center_WS.xyz, halfSize, v.vid, rotation);
 
         float phase = v.color.a * (2 * PI);
         float brightness;
@@ -78,8 +89,8 @@ Category {
         o.texcoord = TRANSFORM_TEX(v.texcoord.xy,_MainTex);
 
         float4 corner = OrientParticle(center.xyz, halfSize, v.vid, rotation);
-        o.vertex = UnityObjectToClipPos(corner);
-
+        //o.vertex = UnityObjectToClipPos(corner);
+        o.vertex = mul(UNITY_MATRIX_VP, corner_WS);
         return o;
       }
 

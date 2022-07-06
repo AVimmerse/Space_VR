@@ -18,6 +18,7 @@ Properties {
   _AlphaMask("Alpha Mask", 2D) = "white" {}
   _Speed ("Animation Speed", Range (0,1)) = 1
   _EmissionGain ("Emission Gain", Range(0, 1)) = 0.5
+  _Intensity("Color Intensity", Range(0.1, 5.0)) = 1.0
 }
 
 Category {
@@ -43,6 +44,7 @@ Category {
       float4 _MainTex_ST;
       float4 _AlphaMask_ST;
       float _Speed;
+      float _Intensity;
       half _EmissionGain;
 
       struct appdata_t {
@@ -50,12 +52,17 @@ Category {
         fixed4 color : COLOR;
         float3 normal : NORMAL;
         float3 texcoord : TEXCOORD0;
+
+        UNITY_VERTEX_INPUT_INSTANCE_ID //Insert
       };
 
       struct v2f {
         float4 vertex : POSITION;
         fixed4 color : COLOR;
         float2 texcoord : TEXCOORD0;
+
+        UNITY_VERTEX_INPUT_INSTANCE_ID
+        UNITY_VERTEX_OUTPUT_STEREO
       };
 
 
@@ -63,8 +70,13 @@ Category {
       {
         v2f o;
 
+        UNITY_SETUP_INSTANCE_ID(v); //Insert
+        UNITY_INITIALIZE_OUTPUT(v2f, o); //Insert
+        UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o); //Insert
+
         o.texcoord = TRANSFORM_TEX(v.texcoord,_MainTex);
-        o.color = TbVertToNative(v.color);
+        o.color = v.color * _Intensity;
+        //o.color = TbVertToNative(v.color);
 
 #ifdef AUDIO_REACTIVE
         float3 displacement = _BeatOutput.y * v.normal *

@@ -17,6 +17,7 @@ Properties {
   _TintColor ("Tint Color", Color) = (0.5,0.5,0.5,0.5)
   _MainTex ("Particle Texture", 2D) = "white" {}
   _ScrollRate("Scroll Rate", Float) = 1.0
+  _Intensity ("Color Intensity", Range(0.1, 2.0)) = 1.0
 }
 
 Category {
@@ -43,11 +44,15 @@ Category {
 
       sampler2D _MainTex;
       fixed4 _TintColor;
+      fixed _Intensity;
 
       struct v2f {
         float4 vertex : SV_POSITION;
         fixed4 color : COLOR;
         float2 texcoord : TEXCOORD0;
+
+        UNITY_VERTEX_INPUT_INSTANCE_ID //Insert
+        UNITY_VERTEX_OUTPUT_STEREO  //Insert
       };
 
       float4 _MainTex_ST;
@@ -80,6 +85,11 @@ Category {
       {
         v.color = TbVertToSrgb(v.color);
         v2f o;
+
+        UNITY_SETUP_INSTANCE_ID(v); //Insert
+        UNITY_INITIALIZE_OUTPUT(v2f, o); //Insert
+        UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o); //Insert
+
         float birthTime = v.texcoord.w;
         float rotation = v.texcoord.z;
         float halfSize = GetParticleHalfSize(v.corner.xyz, v.center, birthTime);
@@ -110,8 +120,8 @@ Category {
       fixed4 frag (v2f i) : SV_Target
       {
         float4 c =  tex2D(_MainTex, i.texcoord);
-        c *= i.color * _TintColor;
-        c = SrgbToNative(c);
+        c *= i.color * _TintColor * _Intensity;
+        //c = SrgbToNative(c);
         return c;
       }
       ENDCG

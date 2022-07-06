@@ -6,37 +6,37 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Team/Josh/Scenes/Spaceship.unity
+    path: Assets/_Team/_Josh/Scenes/Spaceship.unity
     guid: 6f8b5fb55fb9b7a4f8becbb8700f4055
   - enabled: 1
-    path: Assets/_Team/Josh/Scenes/_Planets/Sun.unity
+    path: Assets/_Team/_Josh/Scenes/_Planets/Sun.unity
     guid: 9de1ac8c65159094f8e1c1a0fd579be6
   - enabled: 1
-    path: Assets/_Team/Josh/Scenes/_Planets/Mars.unity
+    path: Assets/_Team/_Josh/Scenes/_Planets/Mars.unity
     guid: c591531703d2a0a4fa1f744a13958ab7
   - enabled: 1
-    path: Assets/_Team/Josh/Scenes/_Planets/Earth.unity
+    path: Assets/_Team/_Josh/Scenes/_Planets/Earth.unity
     guid: 7a44ad69202e8e946be130cd376c4458
   - enabled: 1
-    path: Assets/_Team/Josh/Scenes/_Planets/Jupiter.unity
+    path: Assets/_Team/_Josh/Scenes/_Planets/Jupiter.unity
     guid: 7162fce030c0c904fb3d94f1ddd2d980
   - enabled: 1
-    path: Assets/_Team/Josh/Scenes/_Planets/Lunar.unity
+    path: Assets/_Team/_Josh/Scenes/_Planets/Lunar.unity
     guid: 07c5c29c063764d4d978cafbad72b726
   - enabled: 1
-    path: Assets/_Team/Josh/Scenes/_Planets/Mercury.unity
+    path: Assets/_Team/_Josh/Scenes/_Planets/Mercury.unity
     guid: 3a421ec602221504e87c270b6d5d3c86
   - enabled: 1
-    path: Assets/_Team/Josh/Scenes/_Planets/Neptune.unity
+    path: Assets/_Team/_Josh/Scenes/_Planets/Neptune.unity
     guid: 9028bb906fc9ab34081e16b7124f2c2f
   - enabled: 1
-    path: Assets/_Team/Josh/Scenes/_Planets/Saturn.unity
+    path: Assets/_Team/_Josh/Scenes/_Planets/Saturn.unity
     guid: e6b4c3d708d40ec4e81dfb88a6f33903
   - enabled: 1
-    path: Assets/_Team/Josh/Scenes/_Planets/Uranus.unity
+    path: Assets/_Team/_Josh/Scenes/_Planets/Uranus.unity
     guid: 1529327b970ad154fbd9223f89ea12dd
   - enabled: 1
-    path: Assets/_Team/Josh/Scenes/_Planets/Venus.unity
+    path: Assets/_Team/_Josh/Scenes/_Planets/Venus.unity
     guid: b4daeea7386354041bc85d0cf72b7393
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c23620f79900ddd41981692cf62ad39d,
