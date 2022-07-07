@@ -85,9 +85,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - Boolean_a1ab06cca9bc4fca9ec759b8c8814db9: 0
     - Vector1_01e58a7ff5d94fc9b6d8577144c1afff: 0
+    - Vector1_0bb879fa6a634a34b0513e1a88b01fcc: 0.1
     - Vector1_7683367b3a324d5397407217add23608: 1
+    - Vector1_7bf1b47183834e3fb0e18f4a7e9f4da9: 100
+    - Vector1_7c69a76ce160452eab312d851a9b8bb4: 0
     - Vector1_b8f1f52095e04cf39dcd20d38bc200e5: 0
+    - Vector1_f05c193af0124a3dbafb21bcc386a115: 1.81
+    - Vector1_f4399b85a0d841d7a58686dbcb1630ed: 1
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -99,6 +105,8 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _QueueControl: 0
+    - _QueueOffset: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1

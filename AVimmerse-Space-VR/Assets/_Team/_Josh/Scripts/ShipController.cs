@@ -20,7 +20,7 @@ public class ShipController : MonoBehaviour
     }
     private void OnDestroy()
     {
-        SceneManager.sceneLoaded += SceneLoaded;
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
 
@@ -51,8 +51,10 @@ public class ShipController : MonoBehaviour
     private void updateDestinationText() => destinationText.text = "Destination: '" + destination +"'";
 
 
-    private void SceneLoaded(Scene arg0, LoadSceneMode arg1)
+    private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
     {
+        print("OnSceneLoaded");
+
         // When a scene loads...
         // ensure that only the spaceship and destination are loaded.
 
@@ -64,7 +66,7 @@ public class ShipController : MonoBehaviour
                 print($"scene {SceneManager.GetSceneAt(i).name} doesnt contain destination");
                 SceneManager.UnloadSceneAsync(i);
             }
-            else
+            else if (SceneManager.GetSceneAt(i).name.Contains(destination))
             {
                 print($"scene {SceneManager.GetSceneAt(i).name} contains destination");
                 SceneManager.SetActiveScene(SceneManager.GetSceneAt(i));

@@ -8,7 +8,7 @@ using UnityEngine;
 /// </summary>
 public class SolarSystem : MonoBehaviour
 {
-    readonly private float G = 100f;
+    [SerializeField] private float G = 100f;
     private GameObject[] celestials;
 
     private void Start()

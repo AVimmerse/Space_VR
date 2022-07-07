@@ -75,6 +75,8 @@ Material:
     - _EmissionScroll1: 0
     - _EmissionScroll2: 0
     - _InvFade: 1
+    - _QueueControl: 0
+    - _QueueOffset: 0
     - _Scroll1: 20
     - _Scroll2: 0
     - _Shininess: 0.5
