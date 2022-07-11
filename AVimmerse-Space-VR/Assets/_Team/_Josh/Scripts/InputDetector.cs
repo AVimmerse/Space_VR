@@ -10,16 +10,34 @@ using UnityEngine.XR;
 public class InputDetector : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] GameObject ControllerSetup;
-    [SerializeField] Transform ControllerSetupOrigin;
+    [SerializeField] private GameObject ControllerSetup;
+    [SerializeField] private Transform ControllerSetupOrigin;
+    private Vector3 controllerSetupPos;
 
-    [SerializeField] GameObject HandTrackedSetup;
-    [SerializeField] Transform HandTrackedSetupOrigin;
+    [SerializeField] private GameObject HandTrackedSetup;
+    [SerializeField] private Transform HandTrackedSetupOrigin;
+    private Vector3 handTrackedSetupPos;
 
     private void Awake()
     {
         InputDevices.deviceConnected += InputDevice_Changed;
         InputDevices.deviceDisconnected += InputDevice_Changed;
+    }
+
+    private void OnDestroy()
+    {
+        InputDevices.deviceConnected -= InputDevice_Changed;
+        InputDevices.deviceDisconnected -= InputDevice_Changed;
+    }
+
+    private void Update()
+    {
+        // NOTE: to surpress error:
+        // MissingReferenceException: The object of type 'Transform' has been destroyed but you are still trying to access it.
+        if (ControllerSetup != null)
+            controllerSetupPos = ControllerSetupOrigin.position;
+        else if (HandTrackedSetup != null)
+            handTrackedSetupPos = HandTrackedSetupOrigin.position;
     }
 
     private void InputDevice_Changed(InputDevice obj)
@@ -29,7 +47,7 @@ public class InputDetector : MonoBehaviour
         if (InputDevices.GetDeviceAtXRNode(XRNode.LeftHand).name == null) // Hand Tracking
         {
             // Sync orign
-            HandTrackedSetupOrigin.position = ControllerSetupOrigin.position;
+            HandTrackedSetupOrigin.position = controllerSetupPos;
 
             HandTrackedSetup.SetActive(true);
             ControllerSetup.SetActive(false);
@@ -37,7 +55,7 @@ public class InputDetector : MonoBehaviour
         else // Controllers
         {
             // Sync orign
-            ControllerSetupOrigin.position = HandTrackedSetupOrigin.position;
+            ControllerSetupOrigin.position = handTrackedSetupPos;
 
             ControllerSetup.SetActive(true);
             HandTrackedSetup.SetActive(false);

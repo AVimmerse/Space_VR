@@ -4823,7 +4823,6 @@ GameObject:
   - component: {fileID: 1148788553}
   - component: {fileID: 1148788556}
   - component: {fileID: 1148788555}
-  - component: {fileID: 1148788554}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -4896,20 +4895,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &1148788554
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148788552}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &1165366475
 GameObject:
   m_ObjectHideFlags: 0
@@ -9733,7 +9718,6 @@ GameObject:
   - component: {fileID: 1756393601}
   - component: {fileID: 1756393604}
   - component: {fileID: 1756393603}
-  - component: {fileID: 1756393602}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -9806,20 +9790,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &1756393602
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1756393600}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &33138781003191084
 GameObject:
   m_ObjectHideFlags: 0
@@ -16632,7 +16602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba8fae4adf3044742b19ebe38ccb5439, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 5390946068959660723}
+  animator: {fileID: 0}
   inputGripAction: {fileID: 6152725593826719992, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
   inputTriggerAction: {fileID: 7225813887423843505, guid: c348712bda248c246b8c49b3db54643f,
@@ -17339,15 +17309,105 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -6.833235
       objectReference: {fileID: 0}
+    - target: {fileID: 8008193034546164228, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ValidColorGradient.key0.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193034546164228, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ValidColorGradient.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193034546164228, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ValidColorGradient.key0.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193034546164228, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ValidColorGradient.key0.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193034546164228, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_InvalidColorGradient.key0.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193034546164228, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_InvalidColorGradient.key0.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193034546164229, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_Parameters.textureMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8008193034546164229, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3840ecf020ae6174f8077511b2c7b9a9, type: 2}
+    - target: {fileID: 8008193034546164230, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_SampleFrequency
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193034546164230, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_RaycastMask.m_Bits
+      value: 215
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193035261550579, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ValidColorGradient.key0.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193035261550579, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ValidColorGradient.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193035261550579, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ValidColorGradient.key0.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193035261550579, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_ValidColorGradient.key0.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193035261550579, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_InvalidColorGradient.key0.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193035261550579, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_InvalidColorGradient.key0.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8008193035261550580, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
         type: 3}
       propertyPath: m_Parameters.textureMode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193035261550580, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3840ecf020ae6174f8077511b2c7b9a9, type: 2}
+    - target: {fileID: 8008193035261550581, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_SampleFrequency
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008193035261550581, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4,
+        type: 3}
+      propertyPath: m_RaycastMask.m_Bits
+      value: 215
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 034cbcaa44eece64f9eafcfaa8f9e3b4, type: 3}
@@ -18577,15 +18637,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -148.01604
       objectReference: {fileID: 0}
+    - target: {fileID: 2106134359738460635, guid: a90d329ea424b9b4ea7a4bf0f833a1a6,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2047984057717184138, guid: a90d329ea424b9b4ea7a4bf0f833a1a6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a90d329ea424b9b4ea7a4bf0f833a1a6, type: 3}
---- !u!95 &5390946068959660723 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 2106134359738460635, guid: a90d329ea424b9b4ea7a4bf0f833a1a6,
-    type: 3}
-  m_PrefabInstance: {fileID: 6334879028735222632}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5440880856608548481 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2047984057714050537, guid: a90d329ea424b9b4ea7a4bf0f833a1a6,
