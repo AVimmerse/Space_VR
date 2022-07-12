@@ -66,7 +66,7 @@ public class ShipController : MonoBehaviour
 
     public void TravelToPlanetSurface()
     {
-
+        SceneManager.LoadSceneAsync(destination);
     }
     #endregion
 

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_Team/_Josh/Scenes/Greybox/Spaceship2 Layout 1.unity
+    guid: 5ce351bcf41189542af2a3c26d6229c8
+  - enabled: 1
     path: Assets/_Team/_Josh/Scenes/Spaceship.unity
     guid: 6f8b5fb55fb9b7a4f8becbb8700f4055
   - enabled: 1
