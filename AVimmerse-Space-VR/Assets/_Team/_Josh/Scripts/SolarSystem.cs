@@ -13,8 +13,7 @@ public class SolarSystem : MonoBehaviour
 
     private void Start()
     {
-        celestials = GameObject.FindGameObjectsWithTag("Celestial");
-        InitialVelocity();
+        Initialize();
     }
 
     private void FixedUpdate()
@@ -57,6 +56,21 @@ public class SolarSystem : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void NullVelocity()
+    {
+        foreach (GameObject a in celestials)
+        {
+            a.GetComponent<Rigidbody>().velocity = Vector3.zero;
+        }
+    }
+
+    public void Initialize()
+    {
+        celestials = GameObject.FindGameObjectsWithTag("Celestial");
+        NullVelocity();
+        InitialVelocity();
     }
 }
 
