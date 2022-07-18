@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2319169ba4625a442afc69816b8daf70, type: 3}
   m_Name: Jupiter
   m_EditorClassIdentifier: 
-  Downloaded: 0
-  Uploaded: 0
+  downloaded: 0
+  uploaded: 0
