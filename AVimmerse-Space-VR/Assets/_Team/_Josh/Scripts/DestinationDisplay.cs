@@ -18,6 +18,31 @@ public class DestinationDisplay : MonoBehaviour
     [SerializeField] private GameObject uranus;
     [SerializeField] private GameObject neptune;
 
+    private void OnEnable()
+    {
+        GameDataSO.OnDestinationChange += GameDataSO_OnDestinationChange;
+        GameDataSO.OnLocationChange += GameDataSO_OnLocationChange;
+    }
+
+    private void OnDisable()
+    {
+        GameDataSO.OnDestinationChange -= GameDataSO_OnDestinationChange;
+        GameDataSO.OnLocationChange -= GameDataSO_OnLocationChange;
+    }
+
+    #region Listeners
+    private void GameDataSO_OnLocationChange()
+    {
+        throw new System.NotImplementedException();
+
+    }
+    private void GameDataSO_OnDestinationChange()
+    {
+        throw new System.NotImplementedException();
+    }
+    #endregion
+
+
     private void DisableAllDisplays()
     {
         foreach(Transform child in transform)

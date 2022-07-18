@@ -585,6 +585,86 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: -4770717420272714671, guid: f475762ff5134b346abff4b0f2195d35,
     type: 3}
+--- !u!1001 &1677149999
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4419808623026567843, guid: 7a7175ad70274c14e91ef449f3d29764,
+        type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: c30e6ec7ce7a5614bafa4c0f658050c8,
+        type: 2}
+    - target: {fileID: 4419808623026567843, guid: 7a7175ad70274c14e91ef449f3d29764,
+        type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Download
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123169863340919182, guid: 7a7175ad70274c14e91ef449f3d29764,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123169863340919182, guid: 7a7175ad70274c14e91ef449f3d29764,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123169863340919182, guid: 7a7175ad70274c14e91ef449f3d29764,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123169863340919182, guid: 7a7175ad70274c14e91ef449f3d29764,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123169863340919182, guid: 7a7175ad70274c14e91ef449f3d29764,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123169863340919182, guid: 7a7175ad70274c14e91ef449f3d29764,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123169863340919182, guid: 7a7175ad70274c14e91ef449f3d29764,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123169863340919182, guid: 7a7175ad70274c14e91ef449f3d29764,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123169863340919182, guid: 7a7175ad70274c14e91ef449f3d29764,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123169863340919182, guid: 7a7175ad70274c14e91ef449f3d29764,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123169863340919182, guid: 7a7175ad70274c14e91ef449f3d29764,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5123169863340919183, guid: 7a7175ad70274c14e91ef449f3d29764,
+        type: 3}
+      propertyPath: m_Name
+      value: Console - DownloadData
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a7175ad70274c14e91ef449f3d29764, type: 3}
 --- !u!1001 &2001335418
 PrefabInstance:
   m_ObjectHideFlags: 0

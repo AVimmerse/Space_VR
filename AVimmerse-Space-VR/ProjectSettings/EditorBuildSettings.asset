@@ -5,72 +5,69 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/_Team/_Josh/Scenes/Greybox/Spaceship2 Layout 1.unity
-    guid: 5ce351bcf41189542af2a3c26d6229c8
-  - enabled: 0
+  - enabled: 1
+    path: Assets/_Team/_Josh/Scenes/Intro.unity
+    guid: 12e862a8b1434d647b3677340cbe2d40
+  - enabled: 1
     path: Assets/_Team/_Josh/Scenes/Spaceship.unity
-    guid: 6f8b5fb55fb9b7a4f8becbb8700f4055
-  - enabled: 0
+    guid: 03e10ec1a1242484f813e6097e391411
+  - enabled: 1
     path: Assets/_Team/_Josh/Scenes/_Planets/Sun.unity
     guid: 9de1ac8c65159094f8e1c1a0fd579be6
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Team/_Josh/Scenes/_Planets/Mars.unity
     guid: c591531703d2a0a4fa1f744a13958ab7
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Team/_Josh/Scenes/_Planets/Earth.unity
     guid: 7a44ad69202e8e946be130cd376c4458
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Team/_Josh/Scenes/_Planets/Jupiter.unity
     guid: 7162fce030c0c904fb3d94f1ddd2d980
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Team/_Josh/Scenes/_Planets/Lunar.unity
     guid: 07c5c29c063764d4d978cafbad72b726
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Team/_Josh/Scenes/_Planets/Mercury.unity
     guid: 3a421ec602221504e87c270b6d5d3c86
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Team/_Josh/Scenes/_Planets/Neptune.unity
     guid: 9028bb906fc9ab34081e16b7124f2c2f
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Team/_Josh/Scenes/_Planets/Saturn.unity
     guid: e6b4c3d708d40ec4e81dfb88a6f33903
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Team/_Josh/Scenes/_Planets/Uranus.unity
     guid: 1529327b970ad154fbd9223f89ea12dd
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Team/_Josh/Scenes/_Planets/Venus.unity
     guid: b4daeea7386354041bc85d0cf72b7393
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Team/_Josh/Scenes/_SpaceScenes/Space_Earth.unity
     guid: 436b2d4747495a74695a04ccf8eaf1e3
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Team/_Josh/Scenes/_SpaceScenes/Space_Lunar.unity
     guid: db926eb97c0f6af47b0311964f9369d3
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Team/_Josh/Scenes/_SpaceScenes/Space_Mars.unity
     guid: abef035fe38b65b4db1b91baccf9f126
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Team/_Josh/Scenes/_SpaceScenes/Space_Mercury.unity
     guid: cec97bf73d7ed8a4ea1e1af049b7d75a
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Team/_Josh/Scenes/_SpaceScenes/Space_Neptune.unity
     guid: 8a7b38f48edc0e74caf302b5ac86d533
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Team/_Josh/Scenes/_SpaceScenes/Space_Saturn.unity
     guid: d6438b59bdbecae438f99619922cd7a6
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Team/_Josh/Scenes/_SpaceScenes/Space_Sun.unity
     guid: 8ba33c8aad6c74e4d845c4bbe6c047ab
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Team/_Josh/Scenes/_SpaceScenes/Space_Uranus.unity
     guid: c7909478be97b3d408e1310ad78028d5
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Team/_Josh/Scenes/_SpaceScenes/Space_Venus.unity
     guid: e348aecc2d1e1024db4f5ad31ae211ed
-  - enabled: 1
-    path: Assets/MarsEnv/Scene/Mars_Optimized.unity
-    guid: 49f33cb942ee125488a57c94cf967bfd
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c23620f79900ddd41981692cf62ad39d,
       type: 2}
