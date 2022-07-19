@@ -169,8 +169,13 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 1
+<<<<<<< Updated upstream
   controlID: 195
 --- !u!114 &8
+=======
+  controlID: 115
+--- !u!114 &6
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -195,8 +200,13 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
+<<<<<<< Updated upstream
   controlID: 196
 --- !u!114 &9
+=======
+  controlID: 116
+--- !u!114 &7
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -220,8 +230,13 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
+<<<<<<< Updated upstream
   controlID: 197
 --- !u!114 &10
+=======
+  controlID: 103
+--- !u!114 &8
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -301,8 +316,13 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
+<<<<<<< Updated upstream
   controlID: 149
 --- !u!114 &13
+=======
+  controlID: 117
+--- !u!114 &11
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -619,9 +639,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< Updated upstream
     m_Target: {x: 70.36461, y: -6.5244904, z: 45.589874}
     speed: 2
     m_Value: {x: 70.36461, y: -6.5244904, z: 45.589874}
+=======
+    m_Target: {x: 12.386193, y: 0.24491036, z: -7.5188556}
+    speed: 2
+    m_Value: {x: 12.386193, y: 0.24491036, z: -7.5188556}
+>>>>>>> Stashed changes
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -668,6 +694,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< Updated upstream
     m_Target: {x: 0.27492014, y: -0.48397088, z: 0.16334535, w: 0.8145718}
     speed: 2
     m_Value: {x: 0.27491772, y: -0.48396662, z: 0.1633439, w: 0.8145646}
@@ -675,6 +702,15 @@ MonoBehaviour:
     m_Target: 192.05571
     speed: 2
     m_Value: 192.05571
+=======
+    m_Target: {x: -0.025019115, y: -0.9311178, z: 0.06414871, w: -0.3585302}
+    speed: 2
+    m_Value: {x: -0.02511198, y: -0.9304556, z: 0.064102605, w: -0.35987875}
+  m_Size:
+    m_Target: 5.909348
+    speed: 2
+    m_Value: 5.9093485
+>>>>>>> Stashed changes
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -991,23 +1027,29 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< Updated upstream
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: f8f6ffff28fbffff
+=======
+      m_SelectedIDs: a4f9ffff
+      m_LastClickedID: -1628
+      m_ExpandedIDs: 465affff16ddffff28fbffff647f0000847f000072830000b68300003a850000a4850000
+>>>>>>> Stashed changes
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Lights Qauters
+        m_OriginalName: Lights Qauters
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -43708
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 13}
       m_SearchString: 
@@ -1072,7 +1114,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 7aa00000
     m_LastClickedID: 41082
+<<<<<<< Updated upstream
     m_ExpandedIDs: 00000000a87f0000aa7f0000ac7f0000ae7f0000b07f0000b27f0000b47f0000b67f0000b87f0000ba7f0000bc7f0000be7f0000c07f0000c27f0000c47f0000c67f0000c87f0000ca7f0000cc7f0000ce7f0000d07f0000d27f0000d47f0000d67f0000d87f0000da7f0000
+=======
+    m_ExpandedIDs: 00000000c8860000fc8b0000dac90000dcc90000dec90000e0c90000e2c90000e4c90000e6c90000e8c90000eac90000ecc90000eec90000f0c90000f2c90000f4c90000f6c90000f8c90000fac90000fcc90000fec9000000ca000002ca000004ca000006ca000008ca00000aca00000cca00000eca000010ca000012ca000014ca000016ca000018ca00001aca00001cca00001eca000020ca000022ca000024ca000026ca000028ca00002aca00002cca00002eca000030ca000032ca000034ca000036ca000038ca00003aca00003cca00003eca000040ca000042ca000044ca000046ca000048ca00004aca00004cca00004eca000050ca000052ca000054ca000056ca000058ca00005aca00005cca00005eca000060ca000062ca000064ca000066ca000068ca00006aca00006cca00006eca000070ca000072ca000074ca000076ca000078ca00007aca00007cca00007eca000080ca000082ca000084ca000086ca000088ca00008aca00008cca0000
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1100,7 +1146,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 780}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< Updated upstream
     m_ExpandedIDs: ffffffff00000000a87f0000aa7f0000ac7f0000ae7f0000b07f0000b27f0000b47f0000b67f0000b87f0000ba7f0000bc7f0000be7f0000c07f0000c27f0000c47f0000c67f0000c87f0000ca7f0000cc7f0000ce7f0000d07f0000d27f0000d47f0000d67f0000d87f0000da7f0000fe7f0000008000007e8200005c8300004a87000006880000
+=======
+    m_ExpandedIDs: 00000000c8860000fc8b0000dac90000dcc90000dec90000e0c90000e2c90000e4c90000e6c90000e8c90000eac90000ecc90000eec90000f0c90000f2c90000f4c90000f6c90000f8c90000fac90000fcc90000fec9000000ca000002ca000004ca000006ca000008ca00000aca00000cca00000eca000010ca000012ca000014ca000016ca000018ca00001aca00001cca00001eca000020ca000022ca000024ca000026ca000028ca00002aca00002cca00002eca000030ca000032ca000034ca000036ca000038ca00003aca00003cca00003eca000040ca000042ca000044ca000046ca000048ca00004aca00004cca00004eca000050ca000052ca000054ca000056ca000058ca00005aca00005cca00005eca000060ca000062ca000064ca000066ca000068ca00006aca00006cca00006eca000070ca000072ca000074ca000076ca000078ca00007aca00007cca00007eca000080ca000082ca000084ca000086ca000088ca00008aca00008cca0000
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1198,7 +1248,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< Updated upstream
     - Assets/_Team/_Josh/Textures
+=======
+    - Assets/GameDevHQ/Filebase/3D/Props/Interior/Air_vent_covers_01_02/FBX
+>>>>>>> Stashed changes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
@@ -1210,10 +1264,17 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< Updated upstream
     scrollPos: {x: 0, y: 159}
     m_SelectedIDs: 06880000
     m_LastClickedID: 34822
     m_ExpandedIDs: 00000000a87f0000aa7f0000ac7f0000ae7f0000b07f0000b27f0000b47f0000b67f0000b87f0000ba7f0000bc7f0000be7f0000c07f0000c27f0000c47f0000c67f0000c87f0000ca7f0000cc7f0000ce7f0000d07f0000d27f0000d47f0000d67f0000d87f0000da7f0000008000007e8200005c83000000ca9a3b
+=======
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 7aa00000
+    m_LastClickedID: 41082
+    m_ExpandedIDs: 00000000c8860000fc8b0000dac90000dcc90000dec90000e0c90000e2c90000e4c90000e6c90000e8c90000eac90000ecc90000eec90000f0c90000f2c90000f4c90000f6c90000f8c90000fac90000fcc90000fec9000000ca000002ca000004ca000006ca000008ca00000aca00000cca00000eca000010ca000012ca000014ca000016ca000018ca00001aca00001cca00001eca000020ca000022ca000024ca000026ca000028ca00002aca00002cca00002eca000030ca000032ca000034ca000036ca000038ca00003aca00003cca00003eca000040ca000042ca000044ca000046ca000048ca00004aca00004cca00004eca000050ca000052ca000054ca000056ca000058ca00005aca00005cca00005eca000060ca000062ca000064ca000066ca000068ca00006aca00006cca00006eca000070ca000072ca000074ca000076ca000078ca00007aca00007cca00007eca000080ca000082ca000084ca000086ca000088ca00008aca00008cca0000
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1238,10 +1299,17 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
+<<<<<<< Updated upstream
     scrollPos: {x: 0, y: 27}
     m_SelectedIDs: 
     m_LastClickedID: 0
     m_ExpandedIDs: 00000000a87f0000aa7f0000ac7f0000ae7f0000b07f0000b27f0000b47f0000b67f0000b87f0000ba7f0000bc7f0000be7f0000c07f0000c27f0000c47f0000c67f0000c87f0000ca7f0000cc7f0000ce7f0000d07f0000d27f0000d47f0000d67f0000d87f0000da7f0000
+=======
+    scrollPos: {x: 0, y: 1380.3333}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: ffffffff00000000c8860000fc8b0000dac90000dcc90000dec90000e0c90000e2c90000e4c90000e6c90000e8c90000eac90000ecc90000eec90000f0c90000f2c90000f4c90000f6c90000f8c90000fac90000fcc90000fec9000000ca000002ca000004ca000006ca000008ca00000aca00000cca00000eca000010ca000012ca000014ca000016ca000018ca00001aca00001cca00001eca000020ca000022ca000024ca000026ca000028ca00002aca00002cca00002eca000030ca000032ca000034ca000036ca000038ca00003aca00003cca00003eca000040ca000042ca000044ca000046ca000048ca00004aca00004cca00004eca000050ca000052ca000054ca000056ca000058ca00005aca00005cca00005eca000060ca000062ca000064ca000066ca000068ca00006aca00006cca00006eca000070ca000072ca000074ca000076ca000078ca00007aca00007cca00007eca000080ca000082ca000084ca000086ca000088ca00008aca00008cca00005ccb0000f0d20000c20c0100c40c0100c60c0100f60c0100fa0c0100
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1359,9 +1427,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< Updated upstream
     x: 1310
     y: 72.66667
     width: 395.66675
+=======
+    x: 1249.3334
+    y: 72.66667
+    width: 456.33325
+>>>>>>> Stashed changes
     height: 905
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1379,7 +1453,11 @@ MonoBehaviour:
   m_Script: {fileID: 12079, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   m_MinSize: {x: 390, y: 390}
+=======
+  m_MinSize: {x: 139, y: 29}
+>>>>>>> Stashed changes
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Lighting
@@ -1388,9 +1466,13 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1310
+    x: 1249.3334
     y: 72.66667
+<<<<<<< Updated upstream
     width: 395.66675
+=======
+    width: 456.33325
+>>>>>>> Stashed changes
     height: 905
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
