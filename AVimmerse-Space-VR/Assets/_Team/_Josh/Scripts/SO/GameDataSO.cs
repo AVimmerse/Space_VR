@@ -7,7 +7,7 @@ public class GameDataSO : ScriptableObject
 {
     //Internal Data
     public enum Location { Space, Sun, Mercury, Venus, Earth, Lunar, Mars, Jupiter, Saturn, Uranus, Neptune };
-    public delegate void GameDataEvent();
+    public delegate void GameDataEvent(Location location);
     public static event GameDataEvent OnLocationChange;
     public static event GameDataEvent OnDestinationChange;
 
@@ -86,18 +86,37 @@ public class GameDataSO : ScriptableObject
         Debug.Log($"{name} data has been reset!");
     }
 
+    public string[] GetAllUploaded()
+    {
+        List<string> allUploaded = new List<string>();
+
+        if (Sun.IsUploaded()) allUploaded.Add(Sun.name);
+        if (Mercury.IsUploaded()) allUploaded.Add(Mercury.name);
+        if (Venus.IsUploaded()) allUploaded.Add(Venus.name);
+        if (Earth.IsUploaded()) allUploaded.Add(Earth.name);
+        if (Lunar.IsUploaded()) allUploaded.Add(Lunar.name);
+        if (Mars.IsUploaded()) allUploaded.Add(Mars.name);
+        if (Jupiter.IsUploaded()) allUploaded.Add(Jupiter.name);
+        if (Saturn.IsUploaded()) allUploaded.Add(Saturn.name);
+        if (Uranus.IsUploaded()) allUploaded.Add(Uranus.name);
+        if (Neptune.IsUploaded()) allUploaded.Add(Neptune.name);
+
+        return allUploaded.ToArray();
+
+    }
+
 
     public string GetLocation() => CurrLocation.ToString();
     public void SetLocation(Location location)
     {
         CurrLocation = location;
-        OnLocationChange?.Invoke();
+        OnLocationChange?.Invoke(location);
     }
 
     public string GetDestination() => CurrDestination.ToString();
     public void SetDestination(Location location)
     {
         CurrDestination = location;
-        OnDestinationChange?.Invoke();
+        OnDestinationChange?.Invoke(location);
     }
 }

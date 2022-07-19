@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64d4d43f7f19715428845114289795a4, type: 3}
   m_Name: GameData
   m_EditorClassIdentifier: 
-  CurrLocation: 8
+  CurrLocation: 1
   CurrDestination: 8
   FisrtTime: 0
   Sun: {fileID: 11400000, guid: a2c02469a74ca164397dce4634475ae9, type: 2}

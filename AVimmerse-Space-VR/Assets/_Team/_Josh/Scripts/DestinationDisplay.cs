@@ -20,25 +20,19 @@ public class DestinationDisplay : MonoBehaviour
 
     private void OnEnable()
     {
-        GameDataSO.OnDestinationChange += GameDataSO_OnDestinationChange;
-        GameDataSO.OnLocationChange += GameDataSO_OnLocationChange;
+        GameDataSO.OnDestinationChange += GameDataSO_OnDestinationChange1;
     }
-
     private void OnDisable()
     {
-        GameDataSO.OnDestinationChange -= GameDataSO_OnDestinationChange;
-        GameDataSO.OnLocationChange -= GameDataSO_OnLocationChange;
+        GameDataSO.OnDestinationChange -= GameDataSO_OnDestinationChange1;
     }
+
+
 
     #region Listeners
-    private void GameDataSO_OnLocationChange()
+    private void GameDataSO_OnDestinationChange1(GameDataSO.Location location)
     {
-        throw new System.NotImplementedException();
-
-    }
-    private void GameDataSO_OnDestinationChange()
-    {
-        throw new System.NotImplementedException();
+        SetNewActiveDisplay(location.ToString());
     }
     #endregion
 

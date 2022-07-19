@@ -43,4 +43,7 @@ public class PlanetDataSO : ScriptableObject
         downloaded = false;
         uploaded = false;
     }
+
+    public bool IsDownloaded() => downloaded;
+    public bool IsUploaded() => uploaded;
 }
