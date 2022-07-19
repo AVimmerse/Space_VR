@@ -10,7 +10,7 @@ EditorBuildSettings:
     guid: 12e862a8b1434d647b3677340cbe2d40
   - enabled: 1
     path: Assets/_Team/_Josh/Scenes/Spaceship.unity
-    guid: 03e10ec1a1242484f813e6097e391411
+    guid: efd44d04d4eca77499fa8a7481b0d99b
   - enabled: 1
     path: Assets/_Team/_Josh/Scenes/_Planets/Sun.unity
     guid: 9de1ac8c65159094f8e1c1a0fd579be6
