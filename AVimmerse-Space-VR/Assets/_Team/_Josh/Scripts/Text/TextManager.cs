@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-/// <summary>
-///  Unfinished
-/// </summary>
 public class TextManager : MonoBehaviour
 {
     TMP_Text text;
