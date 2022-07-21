@@ -3,11 +3,11 @@ using UnityEngine.Events;
 public class Event_OnTriggerEnter : MonoBehaviour
 {
     [SerializeField] private string colliderTagRequirement = "";
-    [SerializeField] private UnityEvent onTriggerEnter;
+    [SerializeField] private UnityEvent events;
 
     private void OnTriggerEnter(Collider other)
     {
         if (colliderTagRequirement == "" || colliderTagRequirement == other.tag)
-            onTriggerEnter.Invoke();
+            events.Invoke();
     }
 }

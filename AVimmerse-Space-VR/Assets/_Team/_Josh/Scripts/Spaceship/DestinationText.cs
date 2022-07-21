@@ -3,7 +3,12 @@ using TMPro;
 public class DestinationText : MonoBehaviour
 {
     [SerializeField] private TMP_Text text;
+    [SerializeField] private GameDataSO gameData;
 
+    private void Awake()
+    {
+        SetDestinationText(gameData.GetDestination());
+    }
     private void OnEnable()
     {
         GameDataSO.OnDestinationChange += GameDataSO_OnDestinationChange;
@@ -16,6 +21,11 @@ public class DestinationText : MonoBehaviour
 
     private void GameDataSO_OnDestinationChange(GameDataSO.Location location)
     {
-        text.text = $"Destination: {location}";
+        SetDestinationText(location.ToString());
+    }
+
+    private void SetDestinationText(string location)
+    {
+            text.text = $"Destination: {location}";
     }
 }

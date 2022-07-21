@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class DestinationDisplay : MonoBehaviour
 {
-    
+    [SerializeField] private GameDataSO gameData;
+
     // NOTE:
     // Probabably better to instead save memory and search for the destination in children each time.
     [SerializeField] private GameObject sun;
@@ -18,6 +19,10 @@ public class DestinationDisplay : MonoBehaviour
     [SerializeField] private GameObject uranus;
     [SerializeField] private GameObject neptune;
 
+    private void Awake()
+    {
+        SetNewActiveDisplay(gameData.GetDestination());
+    }
     private void OnEnable()
     {
         GameDataSO.OnDestinationChange += GameDataSO_OnDestinationChange1;

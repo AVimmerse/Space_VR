@@ -12,15 +12,17 @@ public class ShipController : MonoBehaviour
     public enum Location { Space, Sun, Mercury, Venus, Earth, Lunar, Mars, Jupiter, Saturn, Uranus, Neptune };
     
     [Header("References")]
-    [SerializeField] private TMP_Text destinationText;
-    [SerializeField] private DestinationDisplay destinationDisplay;
     [SerializeField] private GameDataSO gameData;
     
     [Header("Data")]
     //[SerializeField] private string destination = "";
     [SerializeField] private Location destination;
 
-
+    private void Awake()
+    {
+        destination = (Location)System.Enum.Parse(typeof(Location), gameData.GetDestination()); // (convert from string to ShipController.Location)
+        SceneManager.LoadSceneAsync("Space_" + gameData.GetLocation(), LoadSceneMode.Additive);
+    }
     private void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -43,20 +45,8 @@ public class ShipController : MonoBehaviour
             Debug.Log("Setting " + arg0.name + " active scene");
             SceneManager.SetActiveScene(arg0);
         }
-
-        //print($"OnSceneLoaded '{arg0.name}'");
-        //
-        //SceneManager.SetActiveScene(arg0);
-        //
-        //// Ensure that only the spaceship and destination are loaded.
-        //for (int i = 0; i < SceneManager.sceneCount; i++)
-        //{
-        //    Scene scene = SceneManager.GetSceneAt(i);
-        //
-        //    if (!scene.name.Equals("Spaceship") && scene != arg0) // (not Spaceship and not last the loaded)
-        //        SceneManager.UnloadSceneAsync(scene);
-        //}
     }
+
     private void GameDataSO_OnLocationChange(GameDataSO.Location location)
     {
 
@@ -71,7 +61,6 @@ public class ShipController : MonoBehaviour
         // additevely load the destination
         Debug.Log("loading " + "Space_" + destination.ToString());
         SceneManager.LoadSceneAsync("Space_" + destination.ToString(), LoadSceneMode.Additive);
-        //SceneManager.SetActiveScene(SceneManager.GetSceneByName("Space_" + destination.ToString()));
     }
     private void GameDataSO_OnDestinationChange(GameDataSO.Location location)
     {
@@ -89,44 +78,7 @@ public class ShipController : MonoBehaviour
     public void SetLocation(string location) => gameData.SetLocation((GameDataSO.Location)System.Enum.Parse(typeof(Location), location));
     public void TravelToDestinationSpace() => gameData.SetLocation((GameDataSO.Location)destination);
     public void TravelToDestinationSurface() => SceneManager.LoadSceneAsync(destination.ToString());
-
-    //{
-    //    gameData.SetDestination((GameDataSO.Location)location);
-    //
-    //    updateDestinationText();
-    //    destinationDisplay.SetNewActiveDisplay(destination);
-    //}
-
-    //public void TravelToPlanetSpace()
-    //{
-    //    if (destinationDisplay == null)
-    //    {
-    //        // Play error sound
-    //        return;
-    //    }
-    //
-    //
-    //    if (IsSceneLoaded("Space_" + destination))
-    //    {
-    //        // Player error sound
-    //        return;
-    //    }
-    //
-    //    // Fade skybox to black?
-    //    // Play charging sound
-    //    // Start animation
-    //    // Play wharp sound
-    //    // Fade screen to black
-    //
-    //    SceneManager.LoadSceneAsync("Space_" + destination, LoadSceneMode.Additive);
-    //
-    //}
-
     #endregion
-
-
-
-
 
 
 
@@ -140,7 +92,5 @@ public class ShipController : MonoBehaviour
         return false;
 
     }
-
-    private void updateDestinationText() => destinationText.text = "Destination: '" + destination + "'";
 
 }
